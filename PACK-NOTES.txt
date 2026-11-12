@@ -1,0 +1,39 @@
+8 FREE BLOCKY CHARACTERS - Rigged & Animated (CC0)
+===================================================
+Version 1.1. A free sample of the "48 Rigged Characters + 30 Animations" pack: 8 low-poly characters (hero, knight, wizard,
+astronaut, pirate, robot, zombie, princess), each with the same 22-bone Mixamo-named skeleton and 10 animation clips,
+one shared material and one 256x256 palette texture.
+
+  Clips in this sample:  idle, walk, run, jump, fall, wave  (the classic six)
+                         cheer, dance, punch, death         (4 of the 24 clips added in v1.1)
+  The full pack has all 30 clips on all 48 characters (walk_back, strafe, sprint, crouch, kick, sword_slash, shoot, block,
+  hit_react, clap, sit, interact, push, climb, swim ...).
+
+  GLB/        8 x .glb   (web, Godot, Unreal, Blender)
+  Unity/      8 x .fbx + palette textures + notes
+  Godot/      small Godot 4 sample project (Up/Down cycle the clips)
+  Textures/   blocky_palette.png (+ emissive mask)
+  Preview/    cover and thumbnails
+  LICENSE.txt CC0 (public domain): use for anything, no attribution needed
+
+Specs: 1 unit = 1 m, about 1.8 m tall, origin at the feet, facing +Z, 2466-4628 triangles each.
+Rigid skinning (blocky toy look), 30 fps clips, in place:
+    Classic (v1.0)
+        idle              2.0 s  loop
+        walk              1.0 s  loop
+        run               0.6 s  loop
+        jump              1.0 s  one-shot
+        fall              0.8 s  loop
+        wave              1.6 s  loop
+    Combat (new in v1.1)
+        punch             0.9 s  one-shot
+        death             2.0 s  one-shot
+    Emotes and life (new in v1.1)
+        cheer             1.0 s  loop
+        dance             1.6 s  loop
+
+Quick start for three.js / Unity / Godot / Blender: GLTFLoader + AnimationMixer for web, FBX with Rig = Humanoid or Generic in
+Unity (see Unity/README_Unity.txt), open Godot/ as a project in Godot 4.
+
+Want the other 40 characters (ninja, viking, king, vampire, clown, diver, ...) and all 30 clips? Get the full pack:
+"48 Rigged Characters + 30 Animations" by Popyca.

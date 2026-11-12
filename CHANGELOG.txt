@@ -1,0 +1,38 @@
+# Changelog - Blocky Characters pack
+
+## v1.3 fix (2026-11-12) - no more flickering faces (free update for existing buyers)
+- Fixed z-fighting: on several characters two differently coloured parts shared exactly the same surface, so the camera showed them flickering in and out (most visible: the Ninja's mouth through his black mask, also collars, vests, belts, straps and shoe soles). Every decal and trim piece now sits at least 2 mm proud of the surface under it, or 2 mm below it where it is meant to be hidden.
+- The Ninja and the Bandit no longer have a mouth and cheeks hidden under their face mask (they could poke through it).
+- Skeleton, the 30 clips, file names, palette and materials are unchanged; vertex positions moved by 2 mm at most (4 mm on a few overlapping trims). Just replace the files.
+
+## v1.3 - wave and cheer read from more angles (free update for existing buyers)
+- **wave**: the raised arm now sweeps twice per loop between out-front (just above the shoulder) and up beside the head, with the forearm trailing. On the old wave the hand stayed at cheek height and hid behind the big head from the far side; now it also shows from the far 3/4 view on most characters.
+- **cheer**: same jump timing with a shallower crouch, and both arms are thrown up in a V that stays clear of the head.
+- Both clips are fitted per character to that character's own hat, hair, helmet or beard, so the arm no longer cuts into the head on the standard heads. Characters with hair, a helmet ring or hat parts hanging over the shoulder (wizard, astronaut, farmer, king and a few others) keep the same small shoulder overlap as before; it got no bigger.
+- Same clip names, same frame counts (wave 48, cheer 30), same 22-bone skeleton and meshes: existing projects keep working, just replace the files.
+- Limits we want to be honest about: these characters have short arms and a big head, so a raised hand reaches about eye height, not above the head.
+
+## v1.2 - redesigned Elf (free update for existing buyers)
+- **Elf redesigned** so it reads as an elf at a glance: green pointed hood with gold trim and a bell, the tip flops over to one side; pointed ears (angled 25 degrees up) that show from the front; short brown hair instead of the white hair frame; warm skin tone. The rust tunic stays (not a famous green-tunic hero). 3868 triangles (was 3648), 22 bones and the 30 clips are unchanged.
+- No other character changed. File names, skeleton, clip names and timing are identical to v1.1, so existing projects keep working: just replace `blocky_30_elf` (and, for the shared palette, `blocky_palette.png`).
+- The shared 256x256 palette gained 2 swatches (the elf's green hood and brown hair); every character in the pack was re-exported against the new palette file, so keep one palette texture per project (all 48 files embed the identical PNG).
+- IP check: all 48 characters re-reviewed against famous game/brand characters; Mechanic, Farmer, Elf and Princess already changed in v1.1, nothing else needed changing.
+- New store preview: labelled 8 x 6 contact sheet of all 48 characters (3/4 view, every character ~70 percent of its cell) in 2560 x 1440.
+
+## v1.1 - 24 new animations (free update for existing buyers)
+- **+24 animation clips**, 30 in total on every one of the 48 characters (all in place, 30 fps, same names on every character):
+  - Locomotion: `walk_back`, `strafe_left`, `strafe_right`, `sprint`, `crouch_idle`, `crouch_walk`
+  - Combat: `punch`, `kick`, `sword_slash`, `shoot`, `block`, `hit_react`, `death`, `die_idle`
+  - Emotes and life: `idle_look_around`, `cheer`, `dance`, `clap`, `sit_down`, `sit_idle`, `interact`, `push`, `climb`, `swim`
+- The six v1.0 clips (`idle`, `walk`, `run`, `jump`, `fall`, `wave`) are unchanged (same names, timing and keys), so existing projects keep working.
+- Same 22-bone Mixamo-named skeleton, same meshes, same material and palette texture: only animation data was added.
+- Godot sample project: Up/Down cycles through all clips, 1-9/0 jump to the first ten, Left/Right switch character; one-shot clips replay automatically.
+- Unity package rebuilt with all 30 clips (animator controller `Blocky_AllClips` with every clip, loop flags set).
+- New previews: 30-clip contact sheet, animated GIFs (full cycle and highlights).
+- Free sample (8 characters, CC0) now ships 10 clips: the classic six plus `cheer`, `dance`, `punch`, `death`.
+- Colour tweaks on 4 characters, so none resembles a famous game character: Mechanic (orange shirt, olive overalls, grey cap, no moustache), Farmer (yellow shirt, green overalls), Elf (rust tunic, silver hair) and Princess (teal dress, auburn hair). Everything else is unchanged.
+- Preview note: the contact sheet and GIFs show a chair (sit_*) and a ladder (climb) as render props; they are not part of the pack.
+- Notes: clips are authored for rigid blocky skinning (limbs are boxes), so a few poses (arms raised over the head, thighs lifted into the belly) overlap by a few centimetres at the joints, like a toy figure. `die_idle` is a static pose (the body after `death`). `sit_*` poses the body for an imaginary chair, `sword_slash` / `shoot` / `climb` need no extra mesh.
+
+## v1.0 - initial release
+- 48 rigged low-poly characters, GLB + FBX, 6 animations (idle, walk, run, jump, fall, wave), Godot sample, Unity notes.
